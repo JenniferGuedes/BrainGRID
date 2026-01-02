@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainGRID</title>
+    <link rel="icon" type="image" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="header" width="100%" cellpadding="10">
+        <tr>
+            <td width="50">
+                <img src="assets/favicon.png" alt="Logo" width="60" height="60">
+            </td>
+            <td>
+                <h1 class="logoText">BrainGrid</h1>
+            </td>
+        </tr>
+    </table>
+
+    <main>
+        <ul id="agenda"></ul>
+    </main>
+    
+    
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script> function start() { 
+        gapi.load('client:auth2', () => { 
+            gapi.client.init({ 
+                apiKey: 'SUA_API_KEY', 
+                clientId: 'SEU_CLIENT_ID.apps.googleusercontent.com', 
+                discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"], 
+                scope: "https://www.googleapis.com/auth/calendar.readonly"
+                 }).then(() => { gapi.auth2.getAuthInstance().signIn();
+
+                  });
+                   });
+                    }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Mockup
+#6817AF;
+#200736;
+#0B0212;
+#38393C;
+#DDDDDD;
+*/
+
+/*Header*/
+h1{
+   font-family: 'Montserrat', sans-serif; 
+   font-weight: 100; 
+   color: #dddddd; 
+   text-shadow: 1px 1px 2px #000;"
+} 
+
+.header{
+    background: linear-gradient(to right, #505152 0%, #38393C 40%, #6817AF 100%);
+}
+
+.logoText{
+    font-family: 'Montserrat', sans-serif; font-weight: 100; color: #dddddd; text-shadow: 1px 1px 2px #000;
+}
+
+body{
+    background-color: #38393C
+}
