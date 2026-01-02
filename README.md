@@ -1,2 +1,18 @@
-# BrainGRID
-O BrainGRID é um site criado para pessoas com a vida corrida e organizada, que não querem perder tempo abrindo vários aplicativos diferentes.
+# BrainGRID - Organize sua rotina
+
+## O que é o BrainGRID?
+O BrainGRID é um site criado para pessoas com a vida corrida e organizada, que não querem perder tempo abrindo vários aplicativos diferentes. Ele reúne em um só lugar funcionalidades de calendário e planilhas, integrando APIs da Google para facilitar o planejamento e organização diária.
+
+## Objetivos centrais
+- Centralizar, em uma única interface, compromissos e tarefas
+- Reduzir a necessidade de mudanças de App, como o Google Sheets e Calendar
+- Grid intuitivo para organizar a sua vida sem a menor complicação
+
+## Tecnologias Utilizadas
+- Frontend: HTML, CSS, Javascript e React
+- APIs: Google Calendar API, Google Calendar API
+
+## Futuras melhorias
+- Notificações em eventos
+- Integração com outras ferramentas, como o Google Tasks
+- Versão Mobile como App
