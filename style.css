@@ -28,3 +28,30 @@ h1{
 body{
     background-color: #38393C
 }
+
+/*Calendar*/
+
+#calendar{
+border-collapse: collapse;
+width: 100%;
+font-family: 'Montserrat', sans-serif;
+}
+
+#calendar th{
+background-color: #6817AF;
+padding: 10px;
+}
+
+#calendar td{
+height: 80px;
+vertical-align: top; 
+text-align: center;
+}
+.event {
+  background-color: #0813FA;
+  color: white;
+  font-size: 12px;
+  margin-top: 4px;
+  padding: 2px;
+  border-radius: 4px;
+}

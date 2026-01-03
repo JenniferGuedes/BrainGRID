@@ -20,24 +20,28 @@
     </table>
 
     <main>
+        <!--Calendar navigation-->
+        <button onclick="prevMonth()">◀</button> 
+        <span id="monthYear"></span> 
+        <button onclick="nextMonth()">▶</button>
+        <table border="1" id="calendar">
+            <tr>
+                <th>Dom</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+                <th>Sáb</th>  
+            </tr>
+        </table>
+
+        <button onclick="login()">Login com Google</button>
         <ul id="agenda"></ul>
     </main>
     
     
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script> function start() { 
-        gapi.load('client:auth2', () => { 
-            gapi.client.init({ 
-                apiKey: 'SUA_API_KEY', 
-                clientId: 'SEU_CLIENT_ID.apps.googleusercontent.com', 
-                discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"], 
-                scope: "https://www.googleapis.com/auth/calendar.readonly"
-                 }).then(() => { gapi.auth2.getAuthInstance().signIn();
-
-                  });
-                   });
-                    }
-    </script>
+    <script src="https://apis.google.com/js/api.js"></script></script>
     <script src="script.js"></script>
 </body>
 </html>
