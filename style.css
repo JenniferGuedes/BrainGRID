@@ -7,6 +7,7 @@
 #0B0212;
 #38393C;
 #DDDDDD;
+{}
 */
 
 /*Header*/
@@ -14,7 +15,7 @@ h1{
    font-family: 'Montserrat', sans-serif; 
    font-weight: 100; 
    color: #dddddd; 
-   text-shadow: 1px 1px 2px #000;"
+   text-shadow: 1px 1px 2px #000;
 } 
 
 .header{
@@ -47,6 +48,7 @@ height: 80px;
 vertical-align: top; 
 text-align: center;
 }
+
 .event {
   background-color: #0813FA;
   color: white;
@@ -54,4 +56,32 @@ text-align: center;
   margin-top: 4px;
   padding: 2px;
   border-radius: 4px;
+}
+
+.loginButton{
+    all: unset;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dddddd;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3 ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.loginButton:hover{
+    background-color: #6817AF;
+}
+
+.monthButton{
+    background-color: #dddddd;
+}
+
+.monthButton:hover{
+    background-color: #6817AF;
+}
+
+/*Sheets*/
+
+#sheets th, tr{
+    font-family: 'Montserrat', sans-serif;
 }

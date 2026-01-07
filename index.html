@@ -21,9 +21,10 @@
 
     <main>
         <!--Calendar navigation-->
-        <button onclick="prevMonth()">◀</button> 
+        <button class="loginButton" onclick="login()">Login com Google</button>
+        <button class="monthButton" onclick="prevMonth()">◀</button> 
         <span id="monthYear"></span> 
-        <button onclick="nextMonth()">▶</button>
+        <button class="monthButton" onclick="nextMonth()">▶</button>
         <table border="1" id="calendar">
             <tr>
                 <th>Dom</th>
@@ -36,8 +37,10 @@
             </tr>
         </table>
 
-        <button onclick="login()">Login com Google</button>
+
         <ul id="agenda"></ul>
+
+        
     </main>
     
     

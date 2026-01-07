@@ -10,7 +10,7 @@ O BrainGRID é um site criado para pessoas com a vida corrida e organizada, que 
 
 ## Tecnologias Utilizadas
 - Frontend: HTML, CSS, Javascript e React
-- APIs: Google Calendar API, Google Tasks API, Google Sheets API
+- APIs: Google Calendar API, Google Calendar API
 
 ## Futuras melhorias
 - Notificações em eventos
