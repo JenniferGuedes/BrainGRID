@@ -20,11 +20,16 @@
     </table>
 
     <main>
+
+         <button class="loginGoogle" onclick="login()">Login com Google</button>
+
+         <img id="userIcon" src="assets/accLog.svg" alt="Perfil" style="display:none; width:40px; height:40px; cursor:pointer;">
+
         <!--Calendar navigation-->
-        <button class="loginButton" onclick="login()">Login com Google</button>
-        <button class="monthButton" onclick="prevMonth()">◀</button> 
+         <h2>Planejamento da Semana</h2>
+        <button class="monthButton" onclick="prevWeek()">◀</button> 
         <span id="monthYear"></span> 
-        <button class="monthButton" onclick="nextMonth()">▶</button>
+        <button class="monthButton" onclick="nextWeek()">▶</button>
         <table border="1" id="calendar">
             <tr>
                 <th>Dom</th>
@@ -37,14 +42,32 @@
             </tr>
         </table>
 
-
         <ul id="agenda"></ul>
 
-        
+        <section id="tasks">
+            <h2>Tarefas</h2>
+            <button id="addTask">+ Add task</button>
+            <ul id="taskList"></ul>
+        </section>
+
+        <h2>Slots</h2>
+        <section class="slots">
+            <span class="slot"></span>
+            <span class="slot"></span>
+            <span class="slot"></span>
+            <span class="slot"></span>
+            <span class="slot"></span>
+            <span class="slot"></span>
+            <span class="slot"></span>
+            <span class="slot"></span>
+        </section>
+
+
+
     </main>
     
     
-    <script src="https://apis.google.com/js/api.js"></script></script>
+    <script src="https://apis.google.com/js/api.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

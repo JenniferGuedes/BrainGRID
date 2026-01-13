@@ -7,7 +7,9 @@
 #0B0212;
 #38393C;
 #DDDDDD;
-{}
+#664AB5;
+#1F2026;
+#EAEAEB;
 */
 
 /*Header*/
@@ -15,11 +17,11 @@ h1{
    font-family: 'Montserrat', sans-serif; 
    font-weight: 100; 
    color: #dddddd; 
-   text-shadow: 1px 1px 2px #000;
+   text-shadow: 1px 1px 2px #000;"
 } 
 
 .header{
-    background: linear-gradient(to right, #505152 0%, #38393C 40%, #6817AF 100%);
+    background: linear-gradient(to right, #1F2026 0%, #38393C 40%, #664AB5 100%);
 }
 
 .logoText{
@@ -27,30 +29,42 @@ h1{
 }
 
 body{
-    background-color: #38393C
+    background-color: #1F2026
 }
 
 /*Calendar*/
 
 #calendar{
-border-collapse: collapse;
+border-collapse: separate;
+border-spacing: 5px;
+border-radius: 10px;
 width: 100%;
 font-family: 'Montserrat', sans-serif;
+padding: 10px;
 }
 
 #calendar th{
-background-color: #6817AF;
-padding: 10px;
+background-color: #664AB5;
+color:#EAEAEB;
+font-weight: 600;
 }
 
 #calendar td{
 height: 80px;
-vertical-align: top; 
+color: #EAEAEB;
 text-align: center;
+border-radius: 8px; 
+border: 1px solid #38393C;
+}
+
+.selectedDay{
+    background-color: #664AB5;
+    border: 2pc solid #EAEAEB;
+    color: white;
 }
 
 .event {
-  background-color: #0813FA;
+  background-color: #664AB5;
   color: white;
   font-size: 12px;
   margin-top: 4px;
@@ -58,30 +72,81 @@ text-align: center;
   border-radius: 4px;
 }
 
-.loginButton{
-    all: unset;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #dddddd;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: background-color 0.3 ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-.loginButton:hover{
-    background-color: #6817AF;
-}
-
 .monthButton{
-    background-color: #dddddd;
+    all: unset;
+    background-color: #38393C;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .monthButton:hover{
-    background-color: #6817AF;
+    background-color: #664AB5;
+    transform: 0.3s ease;
 }
 
-/*Sheets*/
+.loginGoogle{
+    all: unset;
+    font-family: 'Montserrat', sans serif;
+    background-color: rgba(102, 74, 181, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-#sheets th, tr{
-    font-family: 'Montserrat', sans-serif;
+/*Tasks*/
+#tasks {
+  margin-top: 20px;
+  background-color: #0B0212;
+  padding: 15px;
+  border-radius: 10px;
+  color: #DDDDDD;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#addTask {
+  all: unset;
+  background-color: #664AB5;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#addTask:hover {
+  background-color: #6817AF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #DDDDDD;
+  margin-top: 20px;
+}
+
+.slot {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-color: #38393C;
+  border-radius: 8px;
+  border: 1px solid #664AB5;
+  box-shadow: 0 0 5px #200736;
+  cursor: pointer;
+}
+
+.slot:hover {
+  background-color: #664AB5;
+}
+
+.slots{
+    dosplay: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#monthYear{
+    color: #EAEAEB;
+    font-family: 'Montserrat';
+    margin: 0 15px;
 }
